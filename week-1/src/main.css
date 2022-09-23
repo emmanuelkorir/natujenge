@@ -1,0 +1,94 @@
+body {
+  background: #ffffff;
+  margin: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+}
+
+hr {
+  border: 1px solid #d9d9d9;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+table,
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+td {
+  margin: 5px;
+  padding: 3px;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar {
+}
+
+.navbar-items {
+}
+
+.nav-item {
+  display: inline-block;
+  list-style: none;
+}
+
+.card {
+  margin: auto;
+  width: 75%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  margin: 1rem;
+}
+.card-titles {
+  display: flex;
+  justify-content: center;
+}
+
+.card-title {
+  padding: 1rem;
+  width: 50%;
+  text-align: center;
+  list-style: none;
+}
+
+.card-body {
+  text-align: center;
+  padding: 2rem;
+}
+
+.default-values {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.bills {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer {
+  width: 100%;
+  height: 164px;
+}
+
+.footer > p {
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #5f6063;
+  text-align: center;
+}
