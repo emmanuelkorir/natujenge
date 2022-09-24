@@ -53,7 +53,12 @@
         </div>
         <div class="card-body">
           <div class="salary">
-            <form name="grossSalary" action="" method="get">
+            <form
+              name="grossSalary"
+              action=""
+              method="get"
+              class="gross-salary"
+            >
               <label for="gsalary">Gross Salary</label><br />
               <input
                 type="text"
@@ -71,35 +76,99 @@
           </div>
           <div class="default-values">
             <table>
-              <tr>
-                <td>NSSF Contribution</td>
-                <td>Ksh.1,080.00</td>
-              </tr>
-              <tr>
-                <td>Personal Relief</td>
-                <td>Ksh. 2,400.00</td>
-              </tr>
-              <tr>
-                <td>Insurance/NHIF relief</td>
-                <td>Ksh. 210.00</td>
-              </tr>
-              <tr>
-                <td>NHIF contribution</td>
-                <td>Ksh. 1,400.00</td>
-              </tr>
-              <tr>
-                <td>Taxable Income</td>
-                <td>Ksh.</td>
-              </tr>
-              <tr>
-                <td>Tax Before Relief</td>
-                <td>Ksh.</td>
-              </tr>
-              <tr>
-                <td>PAYE</td>
-                <td>Ksh.</td>
-              </tr>
-              <tr class="net-salary"></tr>
+              <tbody class="data-output"></tbody>
+            </table>
+          </div>
+          <div class="bills"><a href="">Manage bills</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <hr />
+      <p>Powered by Natujenge</p>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Tax Manager</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="items">
+        <img
+          class="nav-img"
+          src="https://natujenge.ke/assets/images/logo-wordmark.svg"
+          alt="logo"
+        />
+        <ul class="navbar-items">
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Teams</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://www.meliora.co.ke/articles/nvrjgtnsgh5ophs6mm"
+              >Natujenge Bootcamp</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+
+    <div class="card">
+      <div class="container">
+        <div class="card-header">
+          <ul class="card-titles">
+            <li class="card-title">
+              <a class="card-link" href="#"> Tax Calculator </a>
+            </li>
+            <li class="card-title">
+              <a class="card-link" href="/bill-manager">
+                Bill Manager
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <div class="salary">
+            <form
+              name="grossSalary"
+              action=""
+              method="get"
+              class="gross-salary"
+            >
+              <label for="gsalary">Gross Salary</label><br />
+              <input
+                type="text"
+                name="gsalary"
+                id="gSalary"
+                placeholder="KSH"
+                value=""
+              />
+              <input
+                type="button"
+                value="Calculate"
+                id="inputSalary"
+              />
+            </form>
+          </div>
+          <div class="default-values">
+            <table>
+              <tbody class="data-output"></tbody>
             </table>
           </div>
           <div class="bills"><a href="">Manage bills</a></div>
